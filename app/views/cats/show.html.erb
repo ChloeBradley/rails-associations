@@ -2,8 +2,10 @@
   <h1><%= @cat.name %></h1>
 </div>
 
-<h3>This cat's toys are...</h3>
+<h3>This cat's toys are..</h3>
 
+<% @cat.toys.each do |t| %>
 <div class="well">
-  <em>Replace this with a list of the toys that belong to this cat</em>
+  <em><%= t.name %></em>
 </div>
+  <% end %>
